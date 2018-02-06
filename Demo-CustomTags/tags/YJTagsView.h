@@ -1,21 +1,20 @@
 //
-//  TagsView.h
+//  YJTagsView.h
 //  Demo-CustomTags
 //
-//  Created by haoyajuan on 2018/1/2.
+//  Created by haoyajuan on 2018/2/2.
 //  Copyright © 2018年 haoyajuan. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 @interface TagView : UIView
-
 @property (nonatomic, strong) UIButton *tagButton;
 @property (nonatomic, strong) UIButton *deleteButton;
-
 @end
 
-@interface TagsList : UIView
+
+@interface YJTagsView : UIView
 
 /**
  *  标签删除图片
@@ -134,6 +133,7 @@
  *  @param tagStr 标签文字
  */
 - (void)addSingleTag:(NSString *)tagStr;
+- (void)addTag:(NSString *)tagStr;
 
 /**
  *  添加多个标签
@@ -157,5 +157,4 @@
 
 - (void)dragViewfrom:(NSInteger)start to:(NSInteger)end;
 @end
-
 

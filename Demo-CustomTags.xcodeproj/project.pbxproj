@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		295A60851FFB953000A4C506 /* TagsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 295A60841FFB953000A4C506 /* TagsList.m */; };
+		2937BB492024373800FC3034 /* YJTagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2937BB482024373800FC3034 /* YJTagsView.m */; };
+		2937BB4D20243A4500FC3034 /* FixedSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2937BB4C20243A4500FC3034 /* FixedSizeViewController.m */; };
+		2937BB5020243A5B00FC3034 /* AutoSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2937BB4F20243A5B00FC3034 /* AutoSizeViewController.m */; };
+		2937BB5320243ACB00FC3034 /* ReverseOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2937BB5220243ACB00FC3034 /* ReverseOrderViewController.m */; };
 		2990DACD1FFB1ECE008AE0A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2990DACC1FFB1ECE008AE0A2 /* AppDelegate.m */; };
 		2990DAD01FFB1ECE008AE0A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2990DACF1FFB1ECE008AE0A2 /* ViewController.m */; };
 		2990DAD31FFB1ECE008AE0A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2990DAD11FFB1ECE008AE0A2 /* Main.storyboard */; };
@@ -16,7 +19,6 @@
 		2990DADB1FFB1ECE008AE0A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2990DADA1FFB1ECE008AE0A2 /* main.m */; };
 		2990DAE51FFB1ECE008AE0A2 /* Demo_CustomTagsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2990DAE41FFB1ECE008AE0A2 /* Demo_CustomTagsTests.m */; };
 		2990DAF01FFB1ECE008AE0A2 /* Demo_CustomTagsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2990DAEF1FFB1ECE008AE0A2 /* Demo_CustomTagsUITests.m */; };
-		2990DB001FFB1F15008AE0A2 /* TagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2990DAFF1FFB1F15008AE0A2 /* TagsView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		295A60831FFB953000A4C506 /* TagsList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TagsList.h; sourceTree = "<group>"; };
-		295A60841FFB953000A4C506 /* TagsList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TagsList.m; sourceTree = "<group>"; };
+		2937BB472024373800FC3034 /* YJTagsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJTagsView.h; sourceTree = "<group>"; };
+		2937BB482024373800FC3034 /* YJTagsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJTagsView.m; sourceTree = "<group>"; };
+		2937BB4B20243A4500FC3034 /* FixedSizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FixedSizeViewController.h; sourceTree = "<group>"; };
+		2937BB4C20243A4500FC3034 /* FixedSizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FixedSizeViewController.m; sourceTree = "<group>"; };
+		2937BB4E20243A5B00FC3034 /* AutoSizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoSizeViewController.h; sourceTree = "<group>"; };
+		2937BB4F20243A5B00FC3034 /* AutoSizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoSizeViewController.m; sourceTree = "<group>"; };
+		2937BB5120243ACB00FC3034 /* ReverseOrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseOrderViewController.h; sourceTree = "<group>"; };
+		2937BB5220243ACB00FC3034 /* ReverseOrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseOrderViewController.m; sourceTree = "<group>"; };
 		2990DAC81FFB1ECE008AE0A2 /* Demo-CustomTags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-CustomTags.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2990DACB1FFB1ECE008AE0A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2990DACC1FFB1ECE008AE0A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -55,8 +63,6 @@
 		2990DAEB1FFB1ECE008AE0A2 /* Demo-CustomTagsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Demo-CustomTagsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2990DAEF1FFB1ECE008AE0A2 /* Demo_CustomTagsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo_CustomTagsUITests.m; sourceTree = "<group>"; };
 		2990DAF11FFB1ECE008AE0A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2990DAFE1FFB1F15008AE0A2 /* TagsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TagsView.h; sourceTree = "<group>"; };
-		2990DAFF1FFB1F15008AE0A2 /* TagsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TagsView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2937BB4A20243A0000FC3034 /* DemoViewControlls */ = {
+			isa = PBXGroup;
+			children = (
+				2937BB4E20243A5B00FC3034 /* AutoSizeViewController.h */,
+				2937BB4F20243A5B00FC3034 /* AutoSizeViewController.m */,
+				2937BB4B20243A4500FC3034 /* FixedSizeViewController.h */,
+				2937BB4C20243A4500FC3034 /* FixedSizeViewController.m */,
+				2937BB5120243ACB00FC3034 /* ReverseOrderViewController.h */,
+				2937BB5220243ACB00FC3034 /* ReverseOrderViewController.m */,
+			);
+			path = DemoViewControlls;
+			sourceTree = "<group>";
+		};
 		2990DABF1FFB1ECD008AE0A2 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +126,7 @@
 		2990DACA1FFB1ECE008AE0A2 /* Demo-CustomTags */ = {
 			isa = PBXGroup;
 			children = (
+				2937BB4A20243A0000FC3034 /* DemoViewControlls */,
 				2990DAFD1FFB1EEA008AE0A2 /* tags */,
 				2990DACB1FFB1ECE008AE0A2 /* AppDelegate.h */,
 				2990DACC1FFB1ECE008AE0A2 /* AppDelegate.m */,
@@ -142,10 +162,8 @@
 		2990DAFD1FFB1EEA008AE0A2 /* tags */ = {
 			isa = PBXGroup;
 			children = (
-				2990DAFE1FFB1F15008AE0A2 /* TagsView.h */,
-				2990DAFF1FFB1F15008AE0A2 /* TagsView.m */,
-				295A60831FFB953000A4C506 /* TagsList.h */,
-				295A60841FFB953000A4C506 /* TagsList.m */,
+				2937BB472024373800FC3034 /* YJTagsView.h */,
+				2937BB482024373800FC3034 /* YJTagsView.m */,
 			);
 			path = tags;
 			sourceTree = "<group>";
@@ -283,11 +301,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2937BB492024373800FC3034 /* YJTagsView.m in Sources */,
 				2990DAD01FFB1ECE008AE0A2 /* ViewController.m in Sources */,
 				2990DADB1FFB1ECE008AE0A2 /* main.m in Sources */,
 				2990DACD1FFB1ECE008AE0A2 /* AppDelegate.m in Sources */,
-				295A60851FFB953000A4C506 /* TagsList.m in Sources */,
-				2990DB001FFB1F15008AE0A2 /* TagsView.m in Sources */,
+				2937BB4D20243A4500FC3034 /* FixedSizeViewController.m in Sources */,
+				2937BB5020243A5B00FC3034 /* AutoSizeViewController.m in Sources */,
+				2937BB5320243ACB00FC3034 /* ReverseOrderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

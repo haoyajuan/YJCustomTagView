@@ -1,13 +1,12 @@
 //
-//  TagsView.m
+//  YJTagsView.m
 //  Demo-CustomTags
 //
-//  Created by haoyajuan on 2018/1/2.
+//  Created by haoyajuan on 2018/2/2.
 //  Copyright © 2018年 haoyajuan. All rights reserved.
 //
 
-#import "TagsList.h"
-
+#import "YJTagsView.h"
 
 @implementation TagView
 - (UIButton *)tagButton{
@@ -26,24 +25,13 @@
 }
 @end
 
-@interface TagsList ()
-{
-    NSMutableArray *_tagArray;
-}
+@interface YJTagsView ()
 @property (nonatomic, weak) UICollectionView *tagListView;
-@property (nonatomic, strong) NSMutableDictionary *tagsDict;
 @property (nonatomic, strong) NSMutableArray *tagViewsArray;
 @end
 
-@implementation TagsList
+@implementation YJTagsView
 
-- (NSMutableArray *)tagArray
-{
-    if (_tagArray == nil) {
-        _tagArray = [NSMutableArray array];
-    }
-    return _tagArray;
-}
 - (NSMutableArray *)tagViewsArray
 {
     if (_tagViewsArray == nil) {
@@ -51,21 +39,11 @@
     }
     return _tagViewsArray;
 }
-
-- (NSMutableDictionary *)tagsDict
-{
-    if (_tagsDict == nil) {
-        _tagsDict = [NSMutableDictionary dictionary];
-    }
-    return _tagsDict;
-}
-
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
         [self setup];
     }
-    
     return self;
 }
 
@@ -127,20 +105,12 @@
     if (self.frame.size.width == 0) {
         @throw [NSException exceptionWithName:@"YZError" reason:@"先设置标签列表的frame" userInfo:nil];
     }
-//    [self removeAllSubviews];
-//    [self reloadInputViews];
-//    [self.tagViewsArray removeAllObjects];
     if (_reverseOrder) {
         tagStrs = [[tagStrs reverseObjectEnumerator]allObjects];
     }
-    
     [UIView animateWithDuration:0.25 animations:^{
         [self updateLaterTagButtonFrame:0];
     }];
-//    for (NSString *tagStr in tagStrs) {
-//        [self addTag:tagStr];
-//    }
-    
 }
 
 - (void)configTagView:(TagView*)tagView tagString:(NSString*)tagStr{
@@ -339,7 +309,6 @@
             [self updateLaterTagButtonFrame:start];
         }];
     }
-    
 }
 
 // 看下当前按钮中心点在哪个按钮上
@@ -385,7 +354,6 @@
             self.frame = frame;
         }];
     }
-    
 }
 
 // 更新标签
